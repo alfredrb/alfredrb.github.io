@@ -25,6 +25,9 @@ amber {
 green {
 	color: #009933;
 }
+red {
+	color: red;
+}
 .footer {
   position: fixed;
   left: 0;
