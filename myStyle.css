@@ -11,7 +11,7 @@ h1 {
 p {
 	color: white;
 	font-family: verdana;
-	font-size: 20px;
+	font-size: 15px;
 }
 hr {
 	display: block;
@@ -19,6 +19,18 @@ hr {
 	border: 2px dashed white;
 	width: 10%;
 }
-blue {
+amber {
 	color: #ffb000;
+}
+green {
+	color: #009933;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #0000CC;
+  color: white;
+  text-align: center;
 }
