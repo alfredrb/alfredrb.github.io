@@ -19,6 +19,12 @@ hr {
 	border: 2px dashed white;
 	width: 10%;
 }
+ul {
+	text-align: center;
+	list-style: none;
+	color: white;
+	
+}
 amber {
 	color: #ffb000;
 }
