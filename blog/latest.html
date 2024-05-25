@@ -41,6 +41,25 @@
 <br>	My setup allows us to connect at a little lower speed than that but it is still techincully 56k, k56flex (the first 56k standard.) For this I'm using two freepbx systems (one for digital and analog) connected via a sip trunk and a portmaster 3.
 </p>
 </div>
+
+<!-- <div class="Blog">
+<p style="text-align:center">
+<br>	This project is a networking project diving into the world of 56k dial up connections, modems, and etc. 
+<br>	I started this project because I wanted a way to experience the dial up world as I didn’t have the chance to, although I did experience the dsl era all the way up to 2019 (technically 21 but I switched to gigabit cable,) 
+<br>	I do miss having an analog phone line though. Dial up is very interesting in its own right but I won't be getting into the details of how it became and how it exactly works but I will get into how I got it to work and the steps I took/work I did.
+<br>	Originally I had a Windows 2003 server running Remote Access Services or RAS, this was fine although I had issues of it disconnecting randomly and it was very slow compared to what I wanted. I barely got 33.6k (which was the max I could get on this setup due it being an analog to analog circuit, I will get more in depth about this later on.) 
+<br>	I wanted to do a linux based ras using mgetty as seen in Doge’s Microsystems setup, (https://dogemicrosystems.ca/wiki/Dial_up_server,) unfortunately I couldn’t get it to work right. I mean while we’re here I just post the guide I found for the Windows version I did, (https://gekk.info/articles/ras_2k3.html) 
+<br>	But as I said this is about diving into 56k so here we go! Now the 56k I got into isn’t fully 56k in the sense of 56kbps but its more around 44k but that is still 56k believe it or not, according to wikipedia, “Modern dial-up modems typically have a maximum theoretical transfer speed of 56 kbit/s (using the V.90 or V.92 protocol), although in most cases, 40–50 kbit/s is the norm.” (https://en.wikipedia.org/wiki/Dial-up_Internet_access) 
+<br>	The standard we are using is technically the first 56k dial up to ever be used called k56flex. Although never standardized with the ITU it was the first ever 56k standard we had. The way it accomplished its speed is by using PCM instead of the traditional analog circuits. This is done with something called ISDN PRI (T1), PRI has 24 voice channels, although one is used for information purposes*(needs clarification) it had 23 B channels and 1 D channel. In the telephone exchange or CO pretty much everything is digital, and Lucent took advantage of that and created k56flex.
+<br>	So how do we manage to create the digital network you may ask? Well simple, we use a pbx. The pbx I chose was freepbx because I bought a PRI card which allows us to have 4 connections either network or customer connections. We are using the network option on this card as it allows us to be our own telephone exchange. Now there are no phone numbers like your house phone, it's a trunk similar to a sip trunk but a little different. Now I could have gone through the effort of adding numbers/DIDs but for my purposes it would be a waste of time. I basically made a ring group and made a virtual extension and had it go to the PRI trunk. It works fine and allows me to dial pretty much from any type of phone, voip/pots/etc.
+<br>	I have two pbxes as I need a second slot for my POTS card but my motherboard only had one pci slot so I had to use a second machine. I have a sip trunk running between the two and it works fine. Some minor issues occur but nothing major…
+<br>	I forgot to explain what I’m even using for the dial up server, my bad. I’m using a Lucent Portmaster 3 as it has 48 digital modems and two PRI connections. The portmaster is great because it's small and compact. It only uses two rack spaces or 2u and has 48 modems. I will probably never use all of them but it's cool I guess. The portmaster also has a GUI interface, surprisingly it works on windows 11 and as far as I know has no issues.
+<br>	I may go into more details about the pbxes in a future article but for now this is fine.
+<br>	So what about the client side? Well for my clients (basically just me) I’m using a v.92 modem and a Pentium II machine running Windows ME. Well I have two modems for my machine, an external modem and an internal one. I have a USR5686G ext modem and a Zoom Dualmode pci modem. These modems work fine and allow us to connect to the modem bank with no issues at all. 
+<br>	Well the article isn’t finished but is enough to be posted, I will add more information and refine it in the future but the basics of how I managed to get it working and how it works is done. So thanks for reading!
+</p>
+</div> -->
+
 <!-- <div class="fuList">
 
 <ul>
